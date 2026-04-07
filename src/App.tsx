@@ -5,14 +5,6 @@ import { Paper, Container, Box, useMediaQuery } from "@mui/material"
 
 function App() {
   const isSmall = useMediaQuery((theme) => theme.breakpoints.down("md"));
-  const location = useLocation();
-
-  useEffect(() => {
-    window.scrollTo({
-      top: 0,
-      behavior: "instant",
-    })
-  }, [location.pathname])
 
   return (
     <Container maxWidth="md" disableGutters={isSmall} >
