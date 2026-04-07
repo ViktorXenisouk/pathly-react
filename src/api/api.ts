@@ -29,7 +29,7 @@ const handleSubmit = async (answers: Answers): Promise<{ success: boolean, resul
   } catch (err) {
     console.error(err)
     return {
-      success: false, result: { songs: [], summary: "" }
+      success: false, result: { songs: [], summary: "",id: "" }
     }
   }
 }
@@ -46,7 +46,7 @@ const handleGetResult = async (id: string): Promise<{ success: boolean, result: 
   }
   catch (err) {
     console.error(err)
-    return { success: false, result: { songs: [], summary: "" } }
+    return { success: false, result: { songs: [], summary: "",id: "" } }
   }
 }
 
