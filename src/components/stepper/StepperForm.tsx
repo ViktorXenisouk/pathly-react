@@ -5,7 +5,7 @@ import StepOne from "./steps/StepOne"
 import StepTwo from "./steps/StepTwo"
 import StepThree from "./steps/StepThree"
 import StepFour from "./steps/StepFour"
-import { ArrowRight,ArrowLeft } from "@mui/icons-material"
+import { ArrowRight, ArrowLeft } from "@mui/icons-material"
 
 const steps = ["Vibe", "Taste", "Personalization", "Final"]
 
@@ -17,6 +17,11 @@ const StepperForm = () => {
 
   useEffect(() => {
     setCompleted((prev) => new Set(prev.add(activeStep)))
+
+    window.scrollTo({
+      top: 0,
+      behavior: "instant",
+    })
   }, [activeStep])
 
   const handleNext = () => {

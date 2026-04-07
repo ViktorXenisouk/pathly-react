@@ -1,5 +1,6 @@
 import React from "react"
 import { Box, Card, CardContent, Typography, Button } from "@mui/material"
+import { PlayArrow } from "@mui/icons-material"
 import { type Track } from "../types/track"
 
 type Props = {
@@ -27,11 +28,12 @@ const RenderResultCard: React.FC<Props> = ({ song, index }) => {
         </Box>
 
         <Button
+          startIcon={<PlayArrow />}
           variant="outlined"
-          href={`https://www.youtube.com/results?search_query=${song.name} ${song.artist}`}
+          href={`https://www.youtube.com/results?search_query=${song.artist} ${song.name}`}
           target="_blank"
         >
-          ▶ Listen
+         Listen
         </Button>
       </CardContent>
     </Card>
