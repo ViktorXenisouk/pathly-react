@@ -29,12 +29,12 @@ const SongInput: React.FC<Props> = ({ onSelect, value }) => {
       value={value}
       options={options}
       
-      onChange={(event, newValue) => {
+      onChange={(e, newValue) => {
         const normalized = newValue.map((item) => {
           if (typeof item === "string") {
-            return item // пользователь ввёл руками
+            return item
           }
-          return item // выбрал из списка
+          return item
         })
 
         onSelect(normalized)

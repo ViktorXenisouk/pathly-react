@@ -11,7 +11,7 @@ const LoadingPage: React.FC = () => {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        color: 'secondary', // зеленый акцент
+        color: 'secondary',
         textAlign: 'center',
         px: 2
       }}
@@ -28,8 +28,6 @@ const LoadingPage: React.FC = () => {
         size={60} 
         thickness={5} 
       />
-
-      {/* CSS animation */}
       <style>
         {`
           @keyframes pulse {

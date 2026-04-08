@@ -1,5 +1,4 @@
-import React, { useEffect } from "react"
-import { RouterProvider, useLocation } from "react-router-dom"
+import { RouterProvider } from "react-router-dom"
 import { router } from "./router/router"
 import { Paper, Container, Box, useMediaQuery } from "@mui/material"
 
